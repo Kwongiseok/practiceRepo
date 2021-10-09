@@ -1,17 +1,18 @@
-import React from "react";
-import { useRouter } from "next/router";
 import posts from "../../posts.json";
 
-export default () => {
-  const router = useRouter();
-
-  const post = posts[router.query.id];
-
-  if (!post) return <p></p>;
+const Post = (props) => {
   return (
     <div>
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
+      <h1>{props.post.title}</h1>
+      <p>{props.post.content}</p>
     </div>
   );
 };
+
+Post.getInitialProps = ({ query }) => {
+  return {
+    post: posts[query.id],
+  };
+};
+
+export default Post;

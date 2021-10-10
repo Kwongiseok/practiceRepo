@@ -6,12 +6,17 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@next/bundle-analyzer": "^11.1.2",
+    "cross-env": "^7.0.3",
     "next": "^11.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

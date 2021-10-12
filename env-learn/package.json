@@ -11,7 +11,10 @@
   "author": "Giseok",
   "license": "ISC",
   "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.4.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.4.2",
     "react": "^17.0.2",
     "style-loader": "^3.3.0",
     "url-loader": "^4.1.1"

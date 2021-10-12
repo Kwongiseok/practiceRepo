@@ -12,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "css-loader": "^6.4.0",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "style-loader": "^3.3.0",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "webpack": "^5.58.1",

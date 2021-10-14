@@ -8,7 +8,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    main: "./app.js",
+    main: "./src/app.js",
   },
   output: {
     path: path.resolve("./dist"),
@@ -17,6 +17,24 @@ module.exports = {
   devServer: {
     client: {
       overlay: true,
+    },
+    onBeforeSetupMiddleware: (devServer) => {
+      devServer.app.get("/api/users", (req, res) => {
+        res.json([
+          {
+            id: 1,
+            name: "Alice",
+          },
+          {
+            id: 2,
+            name: "Bek",
+          },
+          {
+            id: 3,
+            name: "Giseok",
+          },
+        ]);
+      });
     },
   },
   stats: "errors-only",

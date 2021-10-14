@@ -1,5 +1,0 @@
-/*!
- * Build Date: 2021. 10. 15. 오전 12:00:48
- *       Commit Version: 4c4d163
- *
- */

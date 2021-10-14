@@ -14,6 +14,12 @@ module.exports = {
     path: path.resolve("./dist"),
     filename: "[name].js", // output name을 동적으로 (entry의 이름으로 결정이 된다.) 생성할 때 사용
   },
+  devServer: {
+    client: {
+      overlay: true,
+    },
+  },
+  stats: "errors-only",
 
   module: {
     rules: [

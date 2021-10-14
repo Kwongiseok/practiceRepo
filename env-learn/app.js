@@ -1,2 +1,8 @@
 var foo = "";
-console.log();
+console.log("hihi");
+
+function abc() {
+  if (true) {
+    const a = 123;
+  }
+}

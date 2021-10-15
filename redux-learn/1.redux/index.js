@@ -45,3 +45,4 @@ const changeCompA = (data) => {
 
 store.dispatch(changeCompA("b"));
 console.log("2nd", store.getState());
+
